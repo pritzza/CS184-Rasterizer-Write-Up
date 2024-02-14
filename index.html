@@ -1,6 +1,46 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
+
+<style>
+
+body {
+  padding: 100px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  color: #121212;
+  display: flex;
+  flex-direction: column;
+}
+h1, h2, h3, h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+img {
+  max-width: 500px;
+  object-fit: contain;
+  margin: 20px 0px;
+}
+.img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.img-grid img {
+  width: 100%;
+}
+.img-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+</style>
+
 <head>
     <title>CS 184/284A Rasterizer</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
