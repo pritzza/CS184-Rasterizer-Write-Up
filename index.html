@@ -61,15 +61,15 @@ img {
         <h2>Overview</h2>
         <p>
 
-            In our study of computer graphics, we explore the topic of rasterization. We delve into optimizing rendering
-            techniques, starting with an
-            efficient approach to triangle rasterization that improved performance. We explored supersampling for
+            In our study of computer graphics, we explore the topic of rasterization. We delve into how we can draw
+            or rasteraize a triangle. We explored supersampling for
             antialiasing, demonstrating its effectiveness in enhancing visual smoothness. Our creative abilities were
-            tested in transforming SVG images into dynamic visuals. We also investigated barycentric coordinates for
-            color blending, and compared pixel sampling methods for texture mapping, identifying the superior quality of
-            bilinear sampling. Lastly, we analyzed level sampling to balance rendering speed, memory use, and
-            antialiasing quality. This project not only advanced our technical skills but also our capacity to apply
-            complex rendering strategies for improved visual outcomes.
+            tested as we implemented select 2D linear transformations and tested them out on a cubeman. 
+            We also investigated barycentric coordinates for color blending, texture sampling, and  more.
+            Comparing pixel sampling methods for texture mapping, we identified the antialiasing superiority of
+            bilinear sampling over nearest neighbor sampling. Lastly, we analyzed all our sampling techniques to evaluate
+            the performance trade offs with the results of each method. This project not only advanced our 
+            technical skills but also our capacity to apply rendering strategies for improved visual outcomes.
 
         </p>
 
@@ -84,8 +84,9 @@ img {
             ensure that the ability to rasterize a triangle is independent of its winding order by verifying our point
             is oriented left or right of every edge.
         </p>
-        <img src="images/image3.png" />
-
+        <div class="img-with-text">
+          <img src="images/image3.png" />
+        </div>
 
         <h3>Part 2: Antialiasing triangles</h3>
         <p>
@@ -136,12 +137,19 @@ img {
             Our little cubeman thickened up his arms and legs a little bit and struck a pose! We have transformed his
             components, including rotating his head and lower arms, non-uniformly scaling both his upper and lower arms
             and legs, and translated his lower arms to have him strike a pose
+
+            <div class="img-with-text">
+              <img src="images/image14.png" />
+            </div>
+
         </p>
 
         <h2>Section II: Sampling</h2>
 
         <h3>Part 4: Barycentric coordinates</h3>
-        <img src="images/image9.png" />
+        <div class="img-with-text">
+          <img src="images/image9.png" />
+        </div>        
         <p>
 
             The prefix “bary-” means weight or pressure. A way to understand barycentric coordinates is as a means of
@@ -152,8 +160,9 @@ img {
             closer to the vertex, the greater its weight and thus the closer the fragment is to the color of its nearest
             vertex.
         </p>
-        <img src="images/image2.png" />
-
+        <div class="img-with-text">
+          <img src="images/image2.png" />
+        </div>
         <h3>Part 5: "Pixel sampling" for texture mapping</h3>
         <p>
             Texture mapping was achieved using barycentric interpolation between the texture coordinates defined for
@@ -236,19 +245,18 @@ img {
                 <figcaption>Nearest level sampling + nearest pixel sampling </figcaption>
             </div>
 
-
             <div class="img-with-text">
-                <img src="images/image19.png" />
+                <img src="images/image17.png" />
+                <figcaption>Bilinear level sampling + nearest pixel sampling</figcaption>
+            </div>
+            
+            <div class="img-with-text">
+                <img src="images/image18.png" />
                 <figcaption>Nearest level sampling + bilinear pixel sampling</figcaption>
             </div>
 
             <div class="img-with-text">
-                <img src="images/image18.png" />
-                <figcaption>Bilinear level sampling + nearest pixel sampling</figcaption>
-            </div>
-
-            <div class="img-with-text">
-                <img src="images/image17.png" />
+                <img src="images/image19.png" />
                 <figcaption>Bilinear level sampling + bilinear pixel sampling</figcaption>
             </div>
         </div>
